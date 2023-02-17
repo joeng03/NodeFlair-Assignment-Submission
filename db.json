@@ -1,0 +1,62 @@
+{
+    "jobs": [
+        {
+            "id": 1,
+            "jobTitle": "Technical Product Manager (Cloud)",
+            "company": {
+                "id": 1,
+                "name": "GovTech",
+                "avatar": "",
+                "rating": 4
+            },
+            "specialization": "PM",
+            "location": "Singapore",
+            "techstack": ["IAM", "play"],
+            "postDate": "17/2/2022"
+        },
+        {
+            "id": 2,
+            "jobTitle": "Staff, Back-end Engineer (Coupang Play)",
+            "company": {
+                "id": 2,
+                "name": "Coupang",
+                "avatar": "",
+                "rating": 3.9
+            },
+            "specialization": "Backend",
+            "salary": [12500, 20250],
+            "location": "Singapore",
+            "techstack": ["REST API", "API", "play", "Modular", "Node.js"],
+            "postDate": "17/2/2022"
+        },
+        {
+            "id": 3,
+            "jobTitle": "Senior Software Enginer (.Net)",
+            "company": {
+                "id": 3,
+                "name": "Embed",
+                "avatar": "",
+                "rating": 3.5
+            },
+            "specialization": "Fullstack",
+            "location": "Singapore",
+            "techstack": ["REST API", "API", "Docker", "TDD", "JavaScript", "SQL"],
+            "postDate": "17/2/2022"
+        },
+        {
+            "id": 4,
+            "jobTitle": "Principal Engineer, Security",
+            "company": {
+                "id": 4,
+                "name": "Circles.life",
+                "avatar": "",
+                "rating": 3
+            },
+            "specialization": "Cybersec Eng",
+            "salary": [12500, 20500],
+            "location": "Singapore",
+            "techstack": ["REST API", "API", "play", "Modular", "Node.js"],
+            "postDate": "17/2/2022"
+        }
+    ]
+}
