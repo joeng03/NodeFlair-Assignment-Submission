@@ -5,58 +5,72 @@
             "jobTitle": "Technical Product Manager (Cloud)",
             "company": {
                 "id": 1,
-                "name": "GovTech",
-                "avatar": "",
+                "companyname": "GovTech",
+                "logo_url": "https://nodeflair.com/companies/167.png",
                 "rating": 4
             },
             "specialization": "PM",
+            "formatted_salary_min": "",
+            "formatted_salary_max": "",
+            "remuneration_frequency": "Monthly",
+            "is_salary_estimated": true,
             "location": "Singapore",
-            "techstack": ["IAM", "play"],
-            "postDate": "17/2/2022"
+            "techStacks": ["IAM", "play"],
+            "time_ago": "less than a minute ago"
         },
         {
             "id": 2,
             "jobTitle": "Staff, Back-end Engineer (Coupang Play)",
             "company": {
                 "id": 2,
-                "name": "Coupang",
-                "avatar": "",
+                "companyname": "Coupang",
+                "logo_url": "https://nodeflair.com/companies/2806.png",
                 "rating": 3.9
             },
             "specialization": "Backend",
-            "salary": [12500, 20250],
+            "formatted_salary_min": "S$12,500",
+            "formatted_salary_max": "S$20,250",
+            "remuneration_frequency": "Monthly",
+            "is_salary_estimated": true,
             "location": "Singapore",
-            "techstack": ["REST API", "API", "play", "Modular", "Node.js"],
-            "postDate": "17/2/2022"
+            "techStacks": ["REST API", "API", "play", "Modular", "Node.js"],
+            "time_ago": "37 minutes ago"
         },
         {
             "id": 3,
             "jobTitle": "Senior Software Enginer (.Net)",
             "company": {
                 "id": 3,
-                "name": "Embed",
-                "avatar": "",
+                "companyname": "Embed",
+                "logo_url": "https://nodeflair.com/companies/561.png",
                 "rating": 3.5
             },
             "specialization": "Fullstack",
+            "formatted_salary_min": "",
+            "formatted_salary_max": "",
+            "remuneration_frequency": "Monthly",
+            "is_salary_estimated": true,
             "location": "Singapore",
-            "techstack": ["REST API", "API", "Docker", "TDD", "JavaScript", "SQL"],
-            "postDate": "17/2/2022"
+            "techStacks": ["REST API", "API", "Docker", "TDD", "JavaScript", "SQL"],
+            "time_ago": "about 1 hour ago"
         },
         {
             "id": 4,
             "jobTitle": "Principal Engineer, Security",
             "company": {
                 "id": 4,
-                "name": "Circles.life",
-                "avatar": "",
+                "companyname": "Circles.Life",
+                "logo_url": "https://nodeflair.com/companies/10.png",
                 "rating": 3
             },
             "specialization": "Cybersec Eng",
-            "salary": [12500, 20500],
+            "formatted_salary_min": "S$12,500",
+            "formatted_salary_max": "S$20,500",
+            "remuneration_frequency": "Monthly",
+            "is_salary_estimated": true,
             "location": "Singapore",
-            "techstack": ["REST API", "API", "play", "Modular", "Node.js"],
-            "postDate": "17/2/2022"
+            "techStacks": ["Strategy"],
+            "time_ago": "about 1 hour ago"
         }
     ]
 }

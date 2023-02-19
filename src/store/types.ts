@@ -2,18 +2,16 @@
 
 export type ICompany = {
     id: number;
-    name: string;
-    avatar: string;
+    companyname: string;
+    logo_url: string;
     rating: number;
 };
 
 const Specialization = ["Backend", "Frontend", "Fullstack", "Data Eng", "PM", "Cybersec Eng"] as const;
-export type Specialization = typeof Specialization[number];
-
-export type salary = undefined | [number, number];
+export type Specialization = (typeof Specialization)[number];
 
 const Location = ["Singapore", "Malaysia", "Thailand", "Taiwan"] as const;
-export type Location = typeof Location[number];
+export type Location = (typeof Location)[number];
 
 const TechStackCategory = [
     "Java",
@@ -32,16 +30,20 @@ const TechStackCategory = [
     "REST API",
     "API",
     "TDD",
+    "Strategy",
 ];
-export type TechStackCategory = typeof TechStackCategory[number];
+export type TechStackCategory = (typeof TechStackCategory)[number];
 
 export interface IJob {
     id: number;
     jobTitle: string;
     company: ICompany;
     specialization: Specialization;
-    salary: salary;
+    formatted_salary_min: string;
+    formatted_salary_max: string;
+    remuneration_frequency: string;
+    is_salary_estimated: boolean;
     location: Location;
-    techStack: TechStackCategory[];
-    postDate: string;
+    techStacks: TechStackCategory[];
+    time_ago: string;
 }

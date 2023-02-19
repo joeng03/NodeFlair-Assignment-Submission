@@ -1,8 +1,15 @@
 import "./App.css";
-import React from "react";
+import JobPanel from "components/JobListing/JobPanel";
+import { useAppDispatch, useAppSelector } from "store";
+import { acSetJobs } from "store/jobs/action";
+import React, { useEffect } from "react";
 
 function App() {
-    return <div className="App"></div>;
+    return (
+        <>
+            <JobPanel />
+        </>
+    );
 }
 
 export default App;
