@@ -21,7 +21,10 @@ const JobListingCardContainer = styled.div<{ $selected: boolean }>`
             outline: 3px solid;
             outline-color: #1fc76a;
         `}
-
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 0 3px 12px rgba(0, 0, 0, 0.1);
+    }
     p {
         margin-bottom: 2px;
     }
@@ -38,7 +41,7 @@ const JobListingCard = ({ job, selected, handleSelectCard }: JobListingCardProps
         <div>
             <JobListingCardContainer $selected={selected} onClick={handleSelectCard}>
                 <JobListingCardTopInformation job={job} />
-                <JobListingCardBottomInformation techStacks={job.techStacks} />
+                <JobListingCardBottomInformation techStacks={job.tech_stacks} />
             </JobListingCardContainer>
         </div>
     );

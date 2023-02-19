@@ -1,4 +1,3 @@
-import CompanyAvatar from "./CompanyAvatar";
 import React from "react";
 import styled from "styled-components";
 

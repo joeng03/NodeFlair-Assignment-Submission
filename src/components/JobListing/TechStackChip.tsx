@@ -22,7 +22,7 @@ type TechStackChipProps = {
 const TechStackChip = ({ techStack }: TechStackChipProps) => {
     return (
         <>
-            <TechStackChipContainer>{techStack}</TechStackChipContainer>&nbsp;
+            <TechStackChipContainer>{techStack.name}</TechStackChipContainer>&nbsp;
         </>
     );
 };

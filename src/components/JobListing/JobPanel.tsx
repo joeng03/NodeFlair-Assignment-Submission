@@ -1,5 +1,4 @@
 import JobListingCard from "./JobListingCard";
-import JobInformationDetails from "./JobInformationDetails";
 import { IJob } from "store/types";
 import { useAppDispatch, useAppSelector } from "store";
 import { acSetJobs } from "store/jobs/action";
@@ -9,10 +8,38 @@ import styled from "styled-components";
 const JobListingContainer = styled.div`
     flex-shrink: 0;
     padding-top: 5px;
+    width: 100%;
+    @media screen and (min-width: 1010px) {
+        width: 427px;
+    }
     > div {
         padding: 5px;
     }
-    width: 427px;
+`;
+
+const JobInformationDetailsContainer = styled.div`
+    display: none;
+    padding: 10px 5px;
+    position: sticky;
+    top: 20px;
+    flex-grow: 1;
+    min-width: 0;
+    min-height: 100%;
+    text-align: center;
+    @media screen and (min-width: 1010px) {
+        display: block;
+    }
+
+    > div {
+        padding: 0 5px 50px 0;
+        max-height: calc(100vh - 106px);
+    }
+    p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 1.5em;
+        margin-bottom: 5px;
+    }
 `;
 
 const JobPanelContainer = styled.div`
@@ -23,7 +50,6 @@ const JobPanelContainer = styled.div`
 
 const JobPanel = () => {
     const handleSelectCard = (job: IJob) => {
-        console.log(job);
         setSelectedJob(job);
     };
 
@@ -48,7 +74,11 @@ const JobPanel = () => {
                         />
                     ))}
             </JobListingContainer>
-            {selectedJob && <JobInformationDetails jobTitle={selectedJob.jobTitle} />}
+            <JobInformationDetailsContainer>
+                <div>
+                    <p>{selectedJob && selectedJob.title}</p>
+                </div>
+            </JobInformationDetailsContainer>
         </JobPanelContainer>
     );
 };

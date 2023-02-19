@@ -3,7 +3,7 @@
 export type ICompany = {
     id: number;
     companyname: string;
-    logo_url: string;
+    avatar: string;
     rating: number;
 };
 
@@ -13,37 +13,20 @@ export type Specialization = (typeof Specialization)[number];
 const Location = ["Singapore", "Malaysia", "Thailand", "Taiwan"] as const;
 export type Location = (typeof Location)[number];
 
-const TechStackCategory = [
-    "Java",
-    "JavaScript",
-    "TypeScript",
-    "C++",
-    "Python",
-    "SQL",
-    "Go",
-    "Linux",
-    "Git",
-    "Docker",
-    "AWS",
-    "IAM",
-    "play",
-    "REST API",
-    "API",
-    "TDD",
-    "Strategy",
-];
-export type TechStackCategory = (typeof TechStackCategory)[number];
+export type TechStackCategory = {
+    name: string;
+};
 
 export interface IJob {
     id: number;
-    jobTitle: string;
+    title: string;
     company: ICompany;
-    specialization: Specialization;
+    position: Specialization;
     formatted_salary_min: string;
     formatted_salary_max: string;
     remuneration_frequency: string;
     is_salary_estimated: boolean;
     location: Location;
-    techStacks: TechStackCategory[];
+    tech_stacks: TechStackCategory[];
     time_ago: string;
 }

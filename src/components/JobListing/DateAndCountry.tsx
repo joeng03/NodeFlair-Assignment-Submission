@@ -34,7 +34,7 @@ const DateAndCountry = ({ timeAgo, country }: DateAndCountryProps) => {
     return (
         <DateAndCountryContainer>
             <span style={{ color: "#1fc76a", fontWeight: "bold", display: "inline-block" }}>
-                {timeAgo}
+                {`${timeAgo} ago`}
                 {"   "}
             </span>
             <div style={{ display: "inline-block" }}>

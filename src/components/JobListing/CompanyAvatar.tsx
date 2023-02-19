@@ -15,14 +15,14 @@ const CompanyAvatarImg = styled.img`
 `;
 
 type CompanyAvatarProps = {
-    logoUrl: string;
+    avatar: string;
     alt: string;
 };
 
-const CompanyAvatar = ({ logoUrl, alt }: CompanyAvatarProps) => {
+const CompanyAvatar = ({ avatar, alt }: CompanyAvatarProps) => {
     return (
         <CompanyAvatarContainer>
-            <CompanyAvatarImg src={logoUrl} alt={alt} />
+            <CompanyAvatarImg src={avatar} alt={alt} />
         </CompanyAvatarContainer>
     );
 };

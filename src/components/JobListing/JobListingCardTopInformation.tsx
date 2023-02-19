@@ -30,6 +30,12 @@ const JobListingCardTopInformationContainer = styled.div`
     background-color: white;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    ::after {
+        content: " ";
+        display: block;
+        margin-top: 10px;
+        border-bottom: 1px solid #dfdfdf;
+        margin-bottom: -15px;
 `;
 
 type JobListingCardTopInformationProps = {
@@ -40,13 +46,13 @@ const JobListingCardTopInformation = ({ job }: JobListingCardTopInformationProps
     return (
         <JobListingCardTopInformationContainer>
             <TopPortionContainer>
-                <CompanyAvatar logoUrl={job.company.logo_url} alt={`${job.company.companyname} logo`} />
+                <CompanyAvatar avatar={job.company.avatar} alt={`${job.company.companyname} logo`} />
                 <JobInformation
                     companyName={job.company.companyname}
                     companyRating={job.company.rating}
-                    jobTitle={job.jobTitle}
+                    jobTitle={job.title}
                 />
-                <SpecializationChip specialization={job.specialization} />
+                <SpecializationChip specialization={job.position} />
             </TopPortionContainer>
             <BottomPortionContainer>
                 <DateAndCountry timeAgo={job.time_ago} country={job.location} />
