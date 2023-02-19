@@ -11,22 +11,26 @@ export const acSetJobs = (): AppThunk<Promise<PayloadAction<IJob[]>>> => {
     };
 };
 
-// export const acCreateJob = (job: FormData): AppThunk<Promise<PayloadAction<IJob>>> => {
-//     return async (dispatch) => {
-//         const createdJob = await jobService.create(job);
-//         return dispatch(createJob(createdJob));
-//     };
-// };
-// export const acUpdateJob = (job: FormData, job_id: number): AppThunk<Promise<PayloadAction<IJob>>> => {
-//     return async (dispatch) => {
-//         const updatedJob = await jobService.update(job, job_id);
-//         return dispatch(updateJob(updatedJob));
-//     };
-// };
+/*
+The CRUD actions for jobsSlice
 
-// export const acDeleteJob = (job_id: number): AppThunk<Promise<PayloadAction<number>>> => {
-//     return async (dispatch) => {
-//         await jobService.remove(job_id);
-//         return dispatch(deleteJob(job_id));
-//     };
-// };
+export const acCreateJob = (job: FormData): AppThunk<Promise<PayloadAction<IJob>>> => {
+    return async (dispatch) => {
+        const createdJob = await jobService.create(job);
+        return dispatch(createJob(createdJob));
+    };
+};
+export const acUpdateJob = (job: FormData, job_id: number): AppThunk<Promise<PayloadAction<IJob>>> => {
+    return async (dispatch) => {
+        const updatedJob = await jobService.update(job, job_id);
+        return dispatch(updateJob(updatedJob));
+    };
+};
+
+export const acDeleteJob = (job_id: number): AppThunk<Promise<PayloadAction<number>>> => {
+    return async (dispatch) => {
+        await jobService.remove(job_id);
+        return dispatch(deleteJob(job_id));
+    };
+};
+*/

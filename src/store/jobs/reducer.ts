@@ -12,20 +12,24 @@ const jobssSlice = createSlice({
             return action.payload;
         },
 
-        // createJob(state, action) {
-        //     state.push(action.payload);
-        // },
-        // updateJob(state, action: PayloadAction<IJob>) {
-        //     const updatedJob = action.payload;
-        //     state[state.findIndex((post) => post.id === updatedJob.id)] = updatedJob;
-        // },
-        // deleteJob(state, action: PayloadAction<number>) {
-        //     const deletedJob_id = action.payload;
-        //     state.splice(
-        //         state.findIndex((post) => post.id === deletedJob_id),
-        //         1,
-        //     );
-        // },
+        /* 
+        The CRUD operations for jobsSlice
+
+        createJob(state, action) {
+            state.push(action.payload);
+        },
+        updateJob(state, action: PayloadAction<IJob>) {
+            const updatedJob = action.payload;
+            state[state.findIndex((post) => post.id === updatedJob.id)] = updatedJob;
+        },
+        deleteJob(state, action: PayloadAction<number>) {
+            const deletedJob_id = action.payload;
+            state.splice(
+                state.findIndex((post) => post.id === deletedJob_id),
+                1,
+            );
+        },
+        */
     },
 });
 export const { setJobs } = jobssSlice.actions;
